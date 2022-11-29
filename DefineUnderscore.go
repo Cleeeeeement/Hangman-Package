@@ -5,9 +5,10 @@ import (
 	"time"
 )
 
+// bite//
 func Randomletters(word string) []string {
 	var underscore []string
-	for i := 1; i < len(word); i++ {
+	for i := 0; i < len(word); i++ {
 		underscore = append(underscore, "_")
 	}
 	for i := 0; i < len(word)/2-1; {

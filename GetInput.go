@@ -9,7 +9,7 @@ func GetInput(word string) string {
 	var end bool
 	for !end {
 
-		fmt.Print("Choose : ")
+		fmt.Print("Choose  : ")
 		fmt.Scanln(&entrer)
 		if len(entrer) == 0 {
 			fmt.Println("Vous devez entrer au minimum UN caractère !")

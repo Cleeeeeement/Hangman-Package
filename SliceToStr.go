@@ -3,7 +3,7 @@ package hangman
 func SliceToStr(slice []string) string {
 	var word string
 	for _, i := range slice {
-		word += i + " "
+		word += i
 	}
 	return word
 }

@@ -6,11 +6,11 @@ import (
 	"os"
 )
 
-func DisplayHangman(compteur int) string {
+func DisplayHangman(compteur int, file string) string {
 	var tab []string
 	var hangman string
 	first_line := (compteur - 1) * 8
-	text, err := os.Open("fichierTxt/hangman.txt")
+	text, err := os.Open(file)
 	if err != nil {
 		log.Fatal(err)
 	}

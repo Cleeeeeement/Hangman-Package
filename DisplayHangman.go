@@ -2,13 +2,13 @@ package hangman
 
 import (
 	"bufio"
-	"fmt"
 	"log"
 	"os"
 )
 
-func DisplayHangman(compteur int) {
+func DisplayHangman(compteur int) string {
 	var tab []string
+	var hangman string
 	first_line := (compteur - 1) * 8
 	text, err := os.Open("fichierTxt/hangman.txt")
 	if err != nil {
@@ -19,6 +19,7 @@ func DisplayHangman(compteur int) {
 		tab = append(tab, scanner.Text())
 	}
 	for i := first_line; i < first_line+8; i++ {
-		fmt.Println(tab[i])
+		hangman += tab[i] + "\n"
 	}
+	return hangman
 }

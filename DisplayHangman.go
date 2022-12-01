@@ -19,7 +19,7 @@ func DisplayHangman(compteur int, file string) string {
 		tab = append(tab, scanner.Text())
 	}
 	for i := first_line; i < first_line+8; i++ {
-		hangman += tab[i] + "\n"
+		hangman += tab[i] + "<br>"
 	}
 	return hangman
 }
